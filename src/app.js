@@ -8,6 +8,9 @@ app.use(express.json());
 // Routes
 const animalRoutes = require("./routes/animal.routes");
 app.use("/api", animalRoutes);
+const roomRoutes = require("./routes/room.routes");
+
+app.use("/api", roomRoutes);
 
 // DB connect + sync
 connectDB();

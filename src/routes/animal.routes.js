@@ -5,5 +5,6 @@ const controller = require("../controllers/animal.controller");
 router.post("/category", controller.createCategory);
 router.post("/stage", controller.createStage);
 router.post("/batch", controller.createBatch);
+router.get("/batches", controller.getBatches);
 
 module.exports = router;
